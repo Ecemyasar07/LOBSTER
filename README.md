@@ -1,1 +1,1 @@
-# LOBSTER project
+# LOBSTER projects
