@@ -1,4 +1,3 @@
-,pred_down,pred_flat,pred_up
-actual_down,4,10,6
-actual_flat,4,10,5
-actual_up,1,9,3
+version https://git-lfs.github.com/spec/v1
+oid sha256:d049f6cf18e4285d046fc256c02fbdd3a3c0a2025e365c54c4be725e8ecf527a
+size 83
