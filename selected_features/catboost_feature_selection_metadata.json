@@ -1,0 +1,21 @@
+{
+    "selection_method": "Optuna + SHAP recursive feature elimination",
+    "random_state": 42,
+    "full_feature_optuna_validation_macro_f1": 0.5089403350272915,
+    "full_feature_optuna_validation_accuracy": 0.5740740740740741,
+    "full_feature_optuna_validation_balanced_accuracy": 0.49719887955182074,
+    "optuna_best_value": 0.5089403350272915,
+    "optuna_best_params": {
+        "iterations": 642,
+        "learning_rate": 0.0120958021728937,
+        "depth": 3,
+        "l2_leaf_reg": 1.4182130648770122,
+        "random_strength": 3.0628931886419317,
+        "bagging_temperature": 0.1654350819009845
+    },
+    "selected_feature_count": 250,
+    "selected_validation_macro_f1": 0.46618357487922707,
+    "selected_validation_accuracy": 0.5740740740740741,
+    "selected_validation_balanced_accuracy": 0.5149393090569561,
+    "note": "The test set was not used during CatBoost feature selection. The 20-feature SHAP-selected set was retained for interpretability and compactness, although the full-feature Optuna CatBoost achieved a higher validation macro F1."
+}

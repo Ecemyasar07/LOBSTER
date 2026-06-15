@@ -1,0 +1,67 @@
+{
+  "target_definition": "future_mid_return = mid_close(t+1) - mid_close(t)",
+  "target_horizon_minutes": 1,
+  "tick_size": 0.01,
+  "target_threshold": 0.01,
+  "threshold_explanation": "1 tick threshold is used. Price changes smaller than 1 tick are labeled as flat.",
+  "class_labels": {
+    "0": "down",
+    "1": "flat",
+    "2": "up"
+  },
+  "label_to_id": {
+    "down": 0,
+    "flat": 1,
+    "up": 2
+  },
+  "n_rows_before_lag_drop": 389,
+  "n_rows_after_lag_drop": 359,
+  "n_model_features": 784,
+  "lag_windows": [
+    1,
+    2,
+    3,
+    5,
+    10,
+    15,
+    30
+  ],
+  "rolling_windows": [
+    3,
+    5,
+    10,
+    15,
+    30
+  ],
+  "base_signal_cols": [
+    "mid_open",
+    "mid_close",
+    "mid_mean",
+    "price_change",
+    "spread_mean",
+    "spread_std",
+    "spread_max",
+    "relative_spread_mean",
+    "ask_depth_mean",
+    "bid_depth_mean",
+    "depth_imbalance",
+    "imbalance_1_mean",
+    "imbalance_3_mean",
+    "imbalance_5_mean",
+    "imbalance_10_mean",
+    "ofi_sum",
+    "ofi_mean",
+    "ofi_std",
+    "event_count",
+    "event_size_total",
+    "trade_volume",
+    "n_new_order",
+    "n_partial_cancel",
+    "n_full_deletion",
+    "n_execution",
+    "execution_ratio",
+    "mid_return_1m",
+    "mid_log_return_1m"
+  ],
+  "split_dir": "splits"
+}
